@@ -1,0 +1,54 @@
+@host = http://localhost:3000
+@host2 = http://play-now-server.opifex.me
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QiLCJpZCI6NywiaWF0IjoxNzI0MzQ5MjY4LCJleHAiOjE3MjQ5NTQwNjh9.DUm_qriMotQrFxHeIaRPjTmYFw7rPV7g9viCpJr0two
+
+### Register
+POST {{host}}/api/auth/register HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "test",
+  "password": "test",
+  "firstName": "firstTest",
+  "lastName": "lastTest"
+}
+
+
+### Login
+POST {{host}}/api/auth/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "test",
+  "password": "test"
+}
+
+### VPS Login
+POST {{host2}}/api/auth/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "test",
+  "password": "test"
+}
+
+### Get users
+GET {{host}}/api/users HTTP/1.1
+Authorization: Bearer {{token}}
+
+### Get all songs
+GET {{host}}/api/songs HTTP/1.1
+Authorization: Bearer {{token}}
+
+### Create playlists
+POST {{host}}/api/playlists HTTP/1.1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "name": "playlist 1"
+}
+
+### Get playlists
+GET {{host}}/api/users/playlists HTTP/1.1
+Authorization: Bearer {{token}}
