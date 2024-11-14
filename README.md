@@ -31,4 +31,4 @@ The project is built using modern web development tools and technologies to ensu
 
 ## License
 
-Guitar Shop is licensed under the MIT license.
+PlayNow is licensed under the MIT license.
