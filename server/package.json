@@ -1,7 +1,7 @@
 {
-  "name": "graduation-project-part-1",
+  "name": "playnow",
   "version": "0.0.1",
-  "description": "",
+  "description": "A music player application that provides comprehensive management of playlists and tracks, including search, playback, adding, and removing tracks",
   "author": "",
   "private": true,
   "license": "UNLICENSED",
